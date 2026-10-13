@@ -1,0 +1,86 @@
+/* ============================================================
+   RUNZ — Design tokens
+   Fonte: ID VISUAL RUNZ / RUNZCLUB - BRANDBOOK V1.pdf + PALETA RUNZ.pdf
+   Cores oficiais (p. 20 do brand book): ff025a, b8f705, efe8da, 1d1d1d, 000000
+   Tipografia oficial (p. 21-22): Be Vietnam Pro (títulos, sempre itálico e
+   minúsculo) e Gambetta (texto corrido, legendas).
+   Lacunas registradas: o brand book não define espaçamentos, grid, raios
+   ou curvas de animação. Os valores abaixo marcados como "neutro" são
+   decisões desta apresentação, não regras da marca.
+   ============================================================ */
+:root {
+  /* Paleta oficial */
+  --runz-pink: #ff025a;
+  --runz-lime: #b8f705;
+  --runz-offwhite: #efe8da;
+  --runz-ink: #1d1d1d;
+  --runz-black: #000000;
+  --runz-deep: #0f0f0f; /* PALETA RUNZ.pdf: R15 G15 B15 */
+
+  /* Derivados (neutros desta apresentação, não oficiais) */
+  --runz-ink-2: #262626;
+  --runz-ink-3: #343434;
+  --runz-line: rgba(239, 232, 218, 0.14);
+  --runz-line-strong: rgba(239, 232, 218, 0.28);
+  --runz-muted: rgba(239, 232, 218, 0.62);
+  --runz-faint: rgba(239, 232, 218, 0.40);
+  --runz-pink-soft: rgba(255, 2, 90, 0.16);
+  --runz-lime-soft: rgba(184, 247, 5, 0.14);
+
+  /* Semântica de status (neutro) */
+  --status-good: #b8f705;
+  --status-warn: #ffc53d;
+  --status-bad: #ff5c5c;
+  --status-info: #efe8da;
+
+  /* Superfícies */
+  --bg: var(--runz-deep);
+  --surface: var(--runz-ink);
+  --surface-2: var(--runz-ink-2);
+  --fg: var(--runz-offwhite);
+
+  /* Tipografia */
+  --font-display: var(--font-be-vietnam), "Be Vietnam Pro", system-ui, sans-serif;
+  --font-body: "Gambetta", Georgia, "Times New Roman", serif;
+  --font-ui: var(--font-be-vietnam), "Be Vietnam Pro", system-ui, sans-serif;
+
+  /* Escala tipográfica (neutro) */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: 3rem;
+  --text-5xl: 4rem;
+  --text-6xl: 5.5rem;
+  --text-7xl: 7.5rem;
+
+  /* Espaços e raios (neutro) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  /* Movimento (neutro, linguagem definida nesta apresentação) */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 180ms;
+  --dur-base: 320ms;
+  --dur-slow: 640ms;
+
+  /* Layout 16:9 */
+  --slide-pad-x: clamp(20px, 5vw, 96px);
+  --slide-pad-y: clamp(20px, 5vh, 72px);
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
